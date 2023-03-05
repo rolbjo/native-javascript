@@ -9,6 +9,7 @@
   justify-content: space-evenly;
   font-size: x-large;
   margin-bottom: 50px;
+  margin-left: 80px;
 }
 #links a {
   text-decoration: underline;
