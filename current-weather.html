@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current weather</title>
+    <meta name="desription" content="info about the current weather" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">Weather right now</h1>
+      <div id="links">
+        <a href="index.html">Main page</a>
+        <a href="current-weather.html">Current weather</a>
+        <a href="upcoming-weather.html">Upcoming weather</a>
+        <a id="cities" href="cities2.html">Fun with cities</a>
+      </div>
+    </header>
+    <main>
+      <video autoplay muted loop id="video-background">
+        <source src="/video.mp4" type="video/mp4">
+      </video>
+      <h2 id="currenth2">See the current weather</h2>
+      <form id="inputform">
+        <div id="remember">
+          <input placeholder="city" id="inputcurrent" type="text" />
+          <button id="getcurrent">Get weather</button>
+        </div>
+
+        <div id="forget">
+          <label for="remove">Remove search  history:</label>
+          <input type="button" id="removecity" value="Remove" />
+        </div>
+      </form>
+
+      <div id="yourweather"></div>
+      <div id="latest"><p>Latest search</p></div>
+    </main>
+    <script src="currentweather.js"></script>
+  </body>
+</html>
