@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+main {
+  margin-top: 10px;
+}
+#rubrikdiv {
+  order: 2;
+}
+.medialogo {
+  width: 30px;
+  justify-content: space-evenly;
+}
+#mainlogo {
+  width: 30px;
+  padding-top: 10px;
+}
+#socialmediadiv {
+  order: 3;
+  align-self: center;
+}
+#logodiv {
+  order: 1;
+}
+header {
+  background-color: #f1d302;
+  display: flex;
+  justify-content: space-around;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 2em;
+  align-items: center;
+  background-color: #f1d302;
+  position: sticky;
+  top: 0;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.navs a {
+  text-decoration: none;
+  background-color: red;
+  padding: 0.3em 0.5em;
+  font-weight: 700;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+}
+/* MAIN CONTENT */
+#openingtext h2 {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0;
+}
+#openingtext h3 {
+  text-align: center;
+}
+#openingtext {
+  background-image: url(renovate-3293498_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+#section2 {
+  /* Detta ska vi ha media queries */
+  /* display: flex; */
+  margin-top: 1em;
+  padding-bottom: 10px;
+}
+#slipbild {
+  max-width: 100%;
+  max-height: 100%;
+}
+#beskrivningtext {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4ee;
+  order: 1;
+  flex-basis: 50%;
+  text-align: center;
+  padding: 1em;
+  border: solid 0.2px beige;
+  justify-content: center;
+  align-items: center;
+}
+#beskrivningtext p {
+  font-size: large;
+}
+#divslipbild {
+  order: 2;
+  flex-basis: 50%;
+  /* margin-left: 10px; */
+}
+footer {
+  background-color: #25291c;
+  height: 160px;
+
+  color: #f4f4ee;
+  padding: 10px;
+  text-align: center;
+  line-height: 5px;
+  margin-bottom: 0;
+}
+footer h2 {
+  line-height: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: red;
+}
+#copyright {
+  font-size: x-small;
+  line-height: 5em;
+}
+/* WEBBSIDA 2 */
+#section3 {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#anställda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#omossdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+/* DEMONSTRERA @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#section3 p {
+  max-width: 30ch;
+  text-align: center;
+}
+/* DEMONSTRERA @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#roland {
+  width: 20%;
+  border: solid 5px;
+  padding: 3px;
+}
+
+/* WEBBSIDA3 */
+
+main {
+  background-color: beige;
+}
+#responsivbild {
+  max-width: 100%;
+  max-height: 100%;
+}
+#section4 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+#section4 h2 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-right: 30px;
+}
+#section4 p {
+  width: 30ch;
+}
+#section4 ul {
+  list-style-position: inside;
+  list-style: none;
+}
+#section4 li:before {
+  content: "✓ ";
+}
+#tjänster1 {
+  display: flex;
+  flex-direction: column;
+}
+#tjänster2 {
+  display: flex;
+  flex-direction: column;
+}
+#tjänster3 {
+  display: flex;
+  flex-direction: column;
+}
+/* WEBBSIDA4 */
+#kontaktdiv img {
+  padding-top: 7px;
+  padding-right: 14px;
+  width: 40px;
+  height: 40px;
+}
+#kontaktrubrik {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+#telefondiv {
+  display: flex;
+  margin-right: 120px;
+}
+#emaildiv {
+  display: flex;
+}
+#kontaktdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1px;
+  padding-bottom: 10px;
+}
+#formulärdiv {
+  padding-bottom: 20px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.formstyle {
+  border-radius: 10px;
+  margin: 2px;
+  padding: 3px;
+  font-family: inherit;
+}
+#formflex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+#form2 {
+  padding-left: 13px;
+}
+fieldset {
+  border: 0;
+}
+@media (min-width: 700px) {
+  #section3 {
+    display: flex;
+    flex-direction: row;
+  }
+  #omossdiv {
+    flex-grow: 1;
+  }
+  #anställda {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 730px) {
+  #section2 {
+    display: flex;
+  }
+  #divslipbild {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 780px) {
+  #section5 {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    height: 50vh;
+  }
+  #kontaktdiv {
+    padding-right: 20px;
+    flex-basis: 50%;
+    padding-bottom: 60px;
+    display: flex;
+  }
+  #emaildiv {
+    flex-basis: 50%;
+    margin-top: 15px;
+  }
+  #kontaktrubrik {
+    text-align: center;
+  }
+  #formflex {
+    align-self: flex-start;
+  }
+}
+@media (min-width: 880px) {
+  #beskrivningtext p {
+    max-width: 57ch;
+  }
+}
+@media (max-width: 900px) {
+  #section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
